@@ -13,7 +13,7 @@ The materials support transparency, reproducibility, and inspection of the full 
 3. ML-based plant clustering (offline) for heterogeneous retrofit multipliers.
 
 # 1. Repository Structure
-
+```
 project_supplementary_materials/
 ├── README.md
 │
@@ -44,7 +44,7 @@ project_supplementary_materials/
     ├── ABS.png
     ├── LLM.png
     └── ML.png
-    
+```    
 
 # 2. Contents Overview
 
