@@ -1,0 +1,100 @@
+{
+  "min_tax_rate": {
+    "value": 30.0,
+    "source": "regulation"
+  },
+  "initial_tax_rate": {
+    "value": 30.0,
+    "source": "regulation"
+  },
+  "emission_adjustment": {
+    "description": "The Government adjusts the carbon tax rate based on the ratio of aggregate emissions (total_emission) relative to the emissions target (emission_target). If emissions are significantly higher than the target, the tax increases; if significantly lower, the tax decreases.",
+    "conditions": [
+      {
+        "id": "high_emission",
+        "variable": "emission_ratio",
+        "operator": ">",
+        "threshold_param": "upper_threshold_ratio",
+        "explanation": "Aggregate emissions exceeding the target by more than the upper threshold ratio trigger a tax rate increase to incentivize better performance."
+      },
+      {
+        "id": "low_emission",
+        "variable": "emission_ratio",
+        "operator": "<",
+        "threshold_param": "lower_threshold_ratio",
+        "explanation": "Aggregate emissions falling below the target by more than the lower threshold ratio trigger a tax rate decrease as a reward for strong performance."
+      }
+    ],
+    "actions": [
+      {
+        "applies_when": "high_emission",
+        "type": "adjust_tax_rate",
+        "direction": "increase",
+        "step_param": "step_up"
+      },
+      {
+        "applies_when": "low_emission",
+        "type": "adjust_tax_rate",
+        "direction": "decrease",
+        "step_param": "step_down"
+      }
+    ],
+    "upper_threshold_ratio": {
+      "value": 1.05,
+      "source": "assumed"
+    },
+    "lower_threshold_ratio": {
+      "value": 0.95,
+      "source": "assumed"
+    },
+    "step_up": {
+      "value": 3.0,
+      "source": "assumed"
+    },
+    "step_down": {
+      "value": 3.0,
+      "source": "assumed"
+    }
+  },
+  "market_alignment": {
+    "description": "The tax rate is partially adjusted towards the external carbon market price when the market price exceeds a significant multiple of the statutory minimum rate or falls below the minimum rate. The minimum tax rate acts as a floor for the carbon tax.",
+    "conditions": [
+      {
+        "id": "market_too_high",
+        "variable": "market_price",
+        "operator": ">",
+        "threshold_expression": "upper_multiplier * min_tax_rate",
+        "explanation": "When the market price significantly exceeds the statutory minimum, a partial tax increase towards the market price is triggered to maintain consistency."
+      },
+      {
+        "id": "market_too_low",
+        "variable": "market_price",
+        "operator": "<",
+        "threshold_expression": "min_tax_rate",
+        "explanation": "When the market price falls below the statutory minimum tax rate (Rp30.00/kg CO₂e), the tax is maintained at the minimum rate, preventing a full downward alignment."
+      }
+    ],
+    "actions": [
+      {
+        "applies_when": "market_too_high",
+        "type": "partial_alignment",
+        "direction": "increase_tax_towards_market",
+        "factor_param": "align_step_factor"
+      },
+      {
+        "applies_when": "market_too_low",
+        "type": "partial_alignment",
+        "direction": "decrease_tax_towards_market",
+        "factor_param": "align_step_factor"
+      }
+    ],
+    "upper_multiplier": {
+      "value": 1.5,
+      "source": "assumed"
+    },
+    "align_step_factor": {
+      "value": 0.25,
+      "source": "assumed"
+    }
+  }
+}

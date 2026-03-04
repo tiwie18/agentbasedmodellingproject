@@ -1,0 +1,277 @@
+GEM unit/phase ID,GEM location ID,Plant name,owner,capacity_mw,capacity_factor,annual_generation_MWh,emission_actual,emission_threshold,is_mine_mouth,Status,Combustion technology
+G100000100040,L100000102708,Adipala power station,PLN,660.0,0.55,3179880.0000000005,2982400.11388054,2896870.6800000006,False,operating,supercritical
+G100000100142,L100000102773,Amamapare Port power station,PT Puncakjaya Power [100%],65.0,0.55,313170.0,386852.4978287972,406181.49,False,operating,subcritical
+G100000100143,L100000102773,Amamapare Port power station,PT Puncakjaya Power [100%],65.0,0.55,313170.0,386852.4978287972,406181.49,False,operating,subcritical
+G100000100144,L100000102773,Amamapare Port power station,PT Puncakjaya Power [100%],65.0,0.55,313170.0,386852.4978287972,406181.49,False,operating,subcritical
+G100000100180,L100000102759,Amurang power station,PLN,30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,subcritical
+G100000100181,L100000102759,Amurang power station,PLN,30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,subcritical
+G100000113971,L100000104535,Amurang-2 power station,PLN,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000113972,L100000104535,Amurang-2 power station,PLN,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000100367,L100000102695,Asahimas Chemical power station,PT Asahimas Chemical [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000112731,L100000102695,Asahimas Chemical power station,PT Asahimas Chemical [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000105482,L100000102783,Asam-Asam power station,PLN,65.0,0.55,313170.0,373327.9485131625,406181.49,False,operating,unknown
+G100000105483,L100000102783,Asam-Asam power station,PLN,65.0,0.55,313170.0,373327.9485131625,406181.49,False,operating,unknown
+G100000100515,L100000102783,Asam-Asam power station,PLN,100.0,0.55,481800.00000000006,536146.2160164001,487099.8,False,operating,CFB
+G100000100517,L100000102783,Asam-Asam power station,PLN,65.0,0.55,313170.0,406577.5471457702,406181.49,False,operating,subcritical
+G100000100518,L100000102783,Asam-Asam power station,PLN,65.0,0.55,313170.0,406577.5471457702,406181.49,False,operating,subcritical
+G100000100505,L100000102812,Bandung Indosyntec power station,PT Panasia Indo Resources Tbk [100%],30.0,0.55,144540.0,178547.30669021409,187468.38,False,operating,subcritical
+G100000100508,L100000102693,Bangka Baru power station,PLN,30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,subcritical
+G100000100509,L100000102693,Bangka Baru power station,PLN,30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,subcritical
+G100000100510,L100000102794,Bangko Tengah power station,PT Huadian Bukit Asam Power [100%],660.0,0.55,3179880.0000000005,2711272.83080049,2896870.6800000006,False,operating,supercritical
+G100000100511,L100000102794,Bangko Tengah power station,PT Huadian Bukit Asam Power [100%],660.0,0.55,3179880.0000000005,2711272.83080049,2896870.6800000006,False,operating,supercritical
+G100000100519,L100000102795,Banjarsari power station,PT Bukit Pembangkit Innovative [100%],110.0,0.55,529980.0000000001,607911.068016681,535809.78,False,operating,subcritical
+G100000100520,L100000102795,Banjarsari power station,PT Bukit Pembangkit Innovative [100%],110.0,0.55,529980.0000000001,607911.068016681,535809.78,False,operating,subcritical
+G100000100530,L100000102696,Banten Labuan power station,PLN,300.0,0.55,1445400.0,1530405.48591612,1461299.4,False,operating,subcritical
+G100000100531,L100000102696,Banten Labuan power station,PLN,300.0,0.55,1445400.0,1530405.48591612,1461299.4,False,operating,subcritical
+G100000100532,L100000102697,Banten Lontar power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000100533,L100000102697,Banten Lontar power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000100534,L100000102697,Banten Lontar power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000100535,L100000102697,Banten Lontar power station,PLN,315.0,0.55,1517670.0,1400227.809442308,1534364.37,False,operating,ultra-supercritical
+G100000100536,L100000102698,Banten Serang power station,PT Lestari Banten Energi [100%],660.0,0.55,3179880.0000000005,2711272.83080049,2896870.6800000006,False,operating,supercritical
+G100000100539,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],400.0,0.55,1927200.0,2295608.22887418,1948399.2,False,operating,subcritical
+G100000100540,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],400.0,0.55,1927200.0,2295608.22887418,1948399.2,False,operating,subcritical
+G100000100541,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],400.0,0.55,1927200.0,2295608.22887418,1948399.2,False,operating,subcritical
+G100000100542,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],400.0,0.55,1927200.0,2295608.22887418,1948399.2,False,operating,subcritical
+G100000100543,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],600.0,0.55,2890800.0,3060810.971832241,2633518.8000000003,False,operating,subcritical
+G100000100544,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],600.0,0.55,2890800.0,3060810.971832241,2633518.8000000003,False,operating,subcritical
+G100000100545,L100000102699,Banten Suralaya power station,PT Indonesia Power Suralaya [100%],600.0,0.55,2890800.0,3060810.971832241,2633518.8000000003,False,operating,subcritical
+G100000100537,L100000102699,Banten Suralaya power station,PLN,625.0,0.55,3011250.0,2922649.365464812,2743248.75,False,operating,subcritical
+G100000100643,L100000102787,Barru power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000100641,L100000102787,Barru power station,PLN,50.0,0.55,240900.00000000003,276323.2127348552,312447.30000000005,False,operating,subcritical
+G100000100642,L100000102787,Barru power station,PLN,50.0,0.55,240900.00000000003,276323.2127348552,312447.30000000005,False,operating,subcritical
+G100000100662,L100000102828,Batu Hijau power station,PT Amman Mineral Nusa Tenggara,31.0,0.55,149358.0,184498.8835798879,193717.326,False,operating,subcritical
+G100000100663,L100000102828,Batu Hijau power station,PT Amman Mineral Nusa Tenggara,31.0,0.55,149358.0,184498.8835798879,193717.326,False,operating,subcritical
+G100000100664,L100000102828,Batu Hijau power station,PT Amman Mineral Nusa Tenggara,31.0,0.55,149358.0,184498.8835798879,193717.326,False,operating,subcritical
+G100000100665,L100000102828,Batu Hijau power station,PT Amman Mineral Nusa Tenggara,31.0,0.55,149358.0,184498.8835798879,193717.326,False,operating,subcritical
+G100000115057,L100000104826,Bengkayang Power Station,PLN,50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000115058,L100000104826,Bengkayang Power Station,PLN,50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000100757,L100000102707,Bengkulu power station,PT Tenaga Listrik Bengkulu [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000112736,L100000102707,Bengkulu power station,PT Tenaga Listrik Bengkulu [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000101097,L100000102797,Bukit Asam Muara Enim power station,PLN,65.0,0.55,313170.0,400668.6584655399,406181.49,False,operating,subcritical
+G100000101098,L100000102797,Bukit Asam Muara Enim power station,PLN,65.0,0.55,313170.0,400668.6584655399,406181.49,False,operating,subcritical
+G100000101099,L100000102797,Bukit Asam Muara Enim power station,PLN,65.0,0.55,313170.0,400668.6584655399,406181.49,False,operating,subcritical
+G100000101100,L100000102797,Bukit Asam Muara Enim power station,PLN,65.0,0.55,313170.0,400668.6584655399,406181.49,False,operating,subcritical
+G100000101254,L100000102691,Celukan Bawang power station,PT Merryline International; PT General Energy Indonesia,142.0,0.55,684156.0000000001,784757.9241669882,691681.716,False,operating,subcritical
+G100000101255,L100000102691,Celukan Bawang power station,PT Merryline International; PT General Energy Indonesia,142.0,0.55,684156.0000000001,784757.9241669882,691681.716,False,operating,subcritical
+G100000101256,L100000102691,Celukan Bawang power station,PT Merryline International; PT General Energy Indonesia,142.0,0.55,684156.0000000001,784757.9241669882,691681.716,False,operating,subcritical
+G100000114188,L100000104575,Cemindo Gemilang power station,PT Cemindo Gemilang Tbk [100%],60.0,0.55,289080.0,302669.25319026,374936.76,False,operating,unknown
+G100000101261,L100000102709,Central Java Power Project,PT Bhimasena Power Indonesia [100%],950.0,0.55,4577100.0,3839008.4241564,4169738.1,False,operating,ultra-supercritical
+G100000101262,L100000102709,Central Java Power Project,PT Bhimasena Power Indonesia [100%],950.0,0.55,4577100.0,3839008.4241564,4169738.1,False,operating,ultra-supercritical
+G100000101579,L100000102813,Cikarang Babelan power station,PT Cikarang Listrindo Tbk [100%],140.0,0.55,674520.0,714189.226760856,681939.72,False,operating,subcritical
+G100000101580,L100000102813,Cikarang Babelan power station,PT Cikarang Listrindo Tbk [100%],140.0,0.55,674520.0,714189.226760856,681939.72,False,operating,subcritical
+G100000101586,L100000102711,Cilacap Sumber power station,PT Sumber Segara Primadaya [100%],300.0,0.55,1445400.0,1530405.48591612,1461299.4,False,operating,subcritical
+G100000101587,L100000102711,Cilacap Sumber power station,PT Sumber Segara Primadaya [100%],300.0,0.55,1445400.0,1530405.48591612,1461299.4,False,operating,subcritical
+G100000101588,L100000102711,Cilacap Sumber power station,PT Sumber Segara Primadaya [100%],660.0,0.55,3179880.0000000005,2711272.83080049,2896870.6800000006,False,operating,supercritical
+G100000101589,L100000102711,Cilacap Sumber power station,PT Sumber Segara Primadaya [100%],1000.0,0.55,4818000.0,4041061.4991120007,4389198.0,False,operating,ultra-supercritical
+G100000113842,L100000104397,Cilegon PTIP Power Station,PT Indorama Petrochemicals [100%],40.0,0.55,192720.0,204054.064788816,249957.84,False,operating,subcritical
+G100000101590,L100000102814,Cirebon power station,PT Cirebon Electric Power [100%],660.0,0.55,3179880.0000000005,2982400.11388054,2896870.6800000006,False,operating,supercritical
+G100000101591,L100000102814,Cirebon power station,PT Cirebon Electric Power [100%],924.0,0.55,4451832.0,3733940.825179488,4055618.952,False,operating,ultra-supercritical
+G100000114341,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],30.0,0.55,144540.0,151334.62659513,187468.38,False,operating,unknown
+G100000114342,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],30.0,0.55,144540.0,151334.62659513,187468.38,False,operating,unknown
+G100000114343,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000114344,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000114345,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],60.0,0.55,289080.0,302669.25319026,374936.76,False,operating,unknown
+G100000114346,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],60.0,0.55,289080.0,302669.25319026,374936.76,False,operating,unknown
+G100000114347,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],125.0,0.55,602250.0,630560.944146375,608874.7499999999,False,operating,unknown
+G100000114348,L100000104617,Delong Nickel Phase I power station,PT Virtue Dragon Nickel Industry [100%],125.0,0.55,602250.0,630560.944146375,608874.7499999999,False,operating,unknown
+G100000114331,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114333,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114334,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114335,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114336,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114337,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114338,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114339,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000114340,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],380.0,0.55,1830840.0,1757163.164354565,1850979.24,False,operating,unknown
+G100000114332,L100000105022,Delong Nickel Phase II power station,PT Obsidian Stainless Steel [100%],380.0,0.55,1830840.0,1757163.164354565,1850979.24,False,operating,unknown
+G100000115105,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000115106,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000115107,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000115108,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000115109,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000115110,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100000115111,L100000104841,Delong Nickel Phase III power station,PT Gunbuster Nickel Industry [100%],135.0,0.55,650430.0,681005.8196780849,657584.73,False,operating,unknown
+G100001031233,L100001026019,Delong Nickel Phase IV power station,PT Nadesico Nickel Industry,330.0,0.55,1589940.0000000002,1525957.484834227,1607429.34,False,operating,unknown
+G100000102626,L100000102735,Embalut power station,PT Cahaya Fajar Kaltim [100%],60.0,0.55,289080.0,331587.855281826,374936.76,False,operating,subcritical
+G100000115737,L100000104975,FAJAR power station,PT Fajar Surya Wisesa Tbk [100%],55.0,0.55,264990.00000000006,277446.81542440504,343692.0300000001,False,operating,unknown
+G100000115073,L100000104834,Indah Kiat Serang power station,PT Indah Kiat Pulp & Paper Tbk,35.0,0.55,168630.0,205983.2417544826,218713.11,False,operating,unknown
+G100000115074,L100000104834,Indah Kiat Serang power station,PT Indah Kiat Pulp & Paper Tbk,35.0,0.55,168630.0,205983.2417544826,218713.11,False,operating,unknown
+G100000115075,L100000104834,Indah Kiat Serang power station,PT Indah Kiat Pulp & Paper Tbk,35.0,0.55,168630.0,205983.2417544826,218713.11,False,operating,unknown
+G100000115076,L100000104834,Indah Kiat Serang power station,PT Indah Kiat Pulp & Paper Tbk,70.0,0.55,337260.0,411966.48350896506,437426.22,False,operating,unknown
+G100000114215,L100000104584,Indo Bharat Rayon power station,PT Indo Bharat Rayon [100%],36.6,0.55,176338.80000000002,200013.9314832302,228711.4236,False,operating,unknown
+G100000104852,L100000102815,Indramayu power station,PLN,330.0,0.55,1589940.0000000002,1683446.034507732,1607429.34,False,operating,subcritical
+G100000104853,L100000102815,Indramayu power station,PLN,330.0,0.55,1589940.0000000002,1683446.034507732,1607429.34,False,operating,subcritical
+G100000104854,L100000102815,Indramayu power station,PLN,330.0,0.55,1589940.0000000002,1683446.034507732,1607429.34,False,operating,subcritical
+G100000104986,L100000102703,Jawa-7 power station,PT Shenhua Guohua Pembangkitan Jawa Bali [100%],991.0,0.55,4774638.000000001,4004691.945619992,4349695.218000001,False,operating,ultra-supercritical
+G100000104987,L100000102703,Jawa-7 power station,PT Shenhua Guohua Pembangkitan Jawa Bali [100%],991.0,0.55,4774638.000000001,4004691.945619992,4349695.218000001,False,operating,ultra-supercritical
+G100000114326,L100000104615,Jinchuan Group WP&RKA power station,WP&RKA Company [100%],50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000114327,L100000104615,Jinchuan Group WP&RKA power station,WP&RKA Company [100%],50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000114328,L100000104615,Jinchuan Group WP&RKA power station,WP&RKA Company [100%],50.0,0.55,240900.00000000003,252224.37765855,312447.30000000005,False,operating,unknown
+G100000105465,L100000102823,Kalbar-1 power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000113441,L100000102823,Kalbar-1 power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105484,L100000102715,Kalselteng-1 power station,PT Datang DSSP Power Indonesia [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105485,L100000102715,Kalselteng-1 power station,PT Datang DSSP Power Indonesia [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105488,L100000102717,Kalteng-1 Pulang Pisau power station,PLN,60.0,0.55,289080.0,331587.855281826,374936.76,False,operating,subcritical
+G100000105489,L100000102717,Kalteng-1 Pulang Pisau power station,PLN,60.0,0.55,289080.0,331587.855281826,374936.76,False,operating,subcritical
+G100000105490,L100000102736,Kaltim FTP2 power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105491,L100000102736,Kaltim FTP2 power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105492,L100000102737,Kaltim Teluk Balikpapan power station,PLN,110.0,0.55,529980.0000000001,561148.6781692441,535809.78,False,operating,subcritical
+G100000105493,L100000102737,Kaltim Teluk Balikpapan power station,PLN,110.0,0.55,529980.0000000001,561148.6781692441,535809.78,False,operating,subcritical
+G100000105496,L100000102719,Kaltim-4 power station,PT Indonesia Energi Dinamika [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105497,L100000102719,Kaltim-4 power station,PT Indonesia Energi Dinamika [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000105632,L100000102798,Keban Agung power station,PT Primanaya Energi [100%],135.0,0.55,650430.0,746072.6743841085,657584.73,False,operating,subcritical
+G100000105633,L100000102798,Keban Agung power station,PT Primanaya Energi [100%],135.0,0.55,650430.0,746072.6743841085,657584.73,False,operating,subcritical
+G100000105669,L100000102810,Kendari-3 power station,PT DSSP Power Kendari [100%],50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000105670,L100000102810,Kendari-3 power station,PT DSSP Power Kendari [100%],50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000105679,L100000102826,Ketapang Smelter power station,PT Well Harvest Winning Alumina Refinery [100%],30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000114899,L100000102826,Ketapang Smelter power station,PT Well Harvest Winning Alumina Refinery [100%],80.0,0.55,385440.0,408108.129577632,499915.68,False,operating,subcritical
+G100000114900,L100000102826,Ketapang Smelter power station,PT Well Harvest Winning Alumina Refinery [100%],80.0,0.55,385440.0,408108.129577632,499915.68,False,operating,subcritical
+G100000105680,L100000102826,Ketapang Smelter power station,PT Well Harvest Winning Alumina Refinery [100%],30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000106084,L100000102767,Labuhan Angin power station,PLN,115.0,0.55,554070.0000000001,667948.827453765,560164.77,False,operating,subcritical
+G100000106085,L100000102767,Labuhan Angin power station,PLN,115.0,0.55,554070.0000000001,667948.827453765,560164.77,False,operating,subcritical
+G100000106136,L100000102754,Lampung Sebalang power station,PLN,100.0,0.55,481800.00000000006,544020.3106080601,487099.8,False,operating,subcritical
+G100000106137,L100000102754,Lampung Sebalang power station,PLN,100.0,0.55,481800.00000000006,544020.3106080601,487099.8,False,operating,subcritical
+G100000113840,L100000104400,Medan Steel Mill power station,PT Gahapi Nisco Steel [100%],30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000113841,L100000104400,Medan Steel Mill power station,PT Gahapi Nisco Steel [100%],30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000106864,L100000102704,Merak power station,PT Merak Energi Indonesia [100%],60.0,0.55,289080.0,331587.855281826,374936.76,False,operating,subcritical
+G100000106865,L100000102704,Merak power station,PT Merak Energi Indonesia [100%],60.0,0.55,289080.0,331587.855281826,374936.76,False,operating,subcritical
+G100000107177,L100000102690,Nagan Raya power station,PLN,110.0,0.55,529980.0000000001,607911.068016681,535809.78,False,operating,subcritical
+G100000107178,L100000102690,Nagan Raya power station,Unnamed special purpose vehicle [100%],110.0,0.55,529980.0000000001,607911.068016681,535809.78,False,operating,subcritical
+G100000107179,L100000102690,Nagan Raya power station,PT Meulaboh Power Generation [100%],225.0,0.55,1084050.0000000002,1147804.11443709,1095974.55,False,operating,subcritical
+G100000107180,L100000102690,Nagan Raya power station,PT Meulaboh Power Generation [100%],225.0,0.55,1084050.0000000002,1147804.11443709,1095974.55,False,operating,subcritical
+G100000114352,L100000104619,Nanshan Industrial Park power station,PT Bintan Alumina Indonesia,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000114488,L100000104619,Nanshan Industrial Park power station,PT Bintan Alumina Indonesia,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000114489,L100000104619,Nanshan Industrial Park power station,PT Bintan Alumina Indonesia,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000114901,L100000104619,Nanshan Industrial Park power station,PT Bintan Alumina Indonesia,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000114902,L100000104619,Nanshan Industrial Park power station,PT Bintan Alumina Indonesia,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000114903,L100000104619,Nanshan Industrial Park power station,PT Bintan Alumina Indonesia,30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000107624,L100000102834,Ombilin power station,PLN,100.0,0.55,481800.00000000006,595157.6889673801,487099.8,False,operating,subcritical
+G100000107625,L100000102834,Ombilin power station,PLN,100.0,0.55,481800.00000000006,595157.6889673801,487099.8,False,operating,subcritical
+G100000107720,L100000102726,Pacitan power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000107721,L100000102726,Pacitan power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000107730,L100000102728,Paiton-1 power station,PT Paiton Energy Pte Ltd [100%],615.0,0.55,2963070.0,3137331.246128047,2699356.77,False,operating,subcritical
+G100000107731,L100000102728,Paiton-1 power station,PT Paiton Energy Pte Ltd [100%],615.0,0.55,2963070.0,3137331.246128047,2699356.77,False,operating,subcritical
+G100000107732,L100000102729,Paiton-2 power station,PT Jawa Power [100%],660.0,0.55,3179880.0000000005,3366892.0690154647,2896870.6800000006,False,operating,subcritical
+G100000107733,L100000102729,Paiton-2 power station,PT Jawa Power [100%],660.0,0.55,3179880.0000000005,3366892.0690154647,2896870.6800000006,False,operating,subcritical
+G100000107734,L100000102730,Paiton-3 power station,PT Paiton Energy Pte Ltd [100%],815.0,0.55,3926670.000000001,3682812.261837333,3577196.3700000006,False,operating,supercritical
+G100000107756,L100000102769,Pangkalan Susu power station,PLN,220.0,0.55,1059960.0000000002,1215822.136033362,1071619.56,False,operating,subcritical
+G100000107757,L100000102769,Pangkalan Susu power station,PLN,220.0,0.55,1059960.0000000002,1215822.136033362,1071619.56,False,operating,subcritical
+G100000107758,L100000102769,Pangkalan Susu power station,PLN,200.0,0.55,963600.0,1020270.32394408,974199.6,False,operating,subcritical
+G100000107759,L100000102769,Pangkalan Susu power station,PLN,200.0,0.55,963600.0,1020270.32394408,974199.6,False,operating,subcritical
+G100000107915,L100000102778,Pekanbaru Tenayan power station,PLN,110.0,0.55,529980.0000000001,561148.6781692441,535809.78,False,operating,subcritical
+G100000107916,L100000102778,Pekanbaru Tenayan power station,PLN,110.0,0.55,529980.0000000001,561148.6781692441,535809.78,False,operating,subcritical
+G100000107917,L100000102819,Pelabuhan Ratu power station,PLN,350.0,0.55,1686300.0000000002,1785473.066902141,1704849.3,False,operating,subcritical
+G100000107918,L100000102819,Pelabuhan Ratu power station,PLN,350.0,0.55,1686300.0000000002,1785473.066902141,1704849.3,False,operating,subcritical
+G100000107919,L100000102819,Pelabuhan Ratu power station,PLN,350.0,0.55,1686300.0000000002,1785473.066902141,1704849.3,False,operating,subcritical
+G100000107928,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],35.0,0.55,168630.0,193426.2489143985,218713.11,False,operating,subcritical
+G100000107929,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],90.0,0.55,433620.00000000006,535641.920070642,562405.14,False,operating,subcritical
+G100000107930,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],90.0,0.55,433620.00000000006,535641.920070642,562405.14,False,operating,subcritical
+G100000107931,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],90.0,0.55,433620.00000000006,535641.920070642,562405.14,False,operating,subcritical
+G100000107932,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],150.0,0.55,722700.0,828969.6382045649,730649.7,False,operating,subcritical
+G100000107926,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],150.0,0.55,722700.0,828969.6382045649,730649.7,False,operating,subcritical
+G100000107927,L100000102779,Perawang Mill power station,PT Indah Kiat Pulp & Paper Tbk [100%],150.0,0.55,722700.0,828969.6382045649,730649.7,False,operating,subcritical
+G100000107729,L100000102727,PLN Paiton Baru power station,PLN,660.0,0.55,3179880.0000000005,3086317.729930843,2896870.6800000006,False,operating,subcritical
+G100000108040,L100000102731,PLN Paiton power station,PLN,400.0,0.55,1927200.0,2295608.22887418,1948399.2,False,operating,subcritical
+G100000108041,L100000102731,PLN Paiton power station,PLN,400.0,0.55,1927200.0,2295608.22887418,1948399.2,False,operating,subcritical
+G100000108075,L100000102801,Pomalaa Nickel power station,PT Aneka Tambang Tbk [100%],30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000108076,L100000102801,Pomalaa Nickel power station,PT Aneka Tambang Tbk [100%],30.0,0.55,144540.0,153040.548591612,187468.38,False,operating,subcritical
+G100000115126,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],30.0,0.55,144540.0,151334.62659513,187468.38,False,operating,unknown
+G100000115127,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],30.0,0.55,144540.0,151334.62659513,187468.38,False,operating,unknown
+G100000115067,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000115068,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000115069,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000115070,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100001031294,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Halmahera Persada Lygend [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000115355,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Obi Nickel Cobalt [100%],380.0,0.55,1830840.0,1757163.164354565,1850979.24,False,operating,unknown
+G100000115356,L100000104831,PT Halmahera Persada Lygend Nickel Smelter power station,PT Obi Nickel Cobalt [100%],380.0,0.55,1830840.0,1757163.164354565,1850979.24,False,operating,unknown
+G100001000642,L100001000402,PT IHIP power station,PT Baoshuo Taman Industry Investment Group,117.0,0.55,563706.0000000001,590205.0437210071,569906.7660000001,False,operating,unknown
+G100001000643,L100001000402,PT IHIP power station,PT Baoshuo Taman Industry Investment Group,117.0,0.55,563706.0000000001,590205.0437210071,569906.7660000001,False,operating,unknown
+G100001000644,L100001000402,PT IHIP power station,PT Baoshuo Taman Industry Investment Group,116.0,0.55,558888.0,585160.5561678361,565035.7679999999,False,operating,unknown
+G100000108234,L100000102789,Punagaya power station,PT Bosowa Makassar [100%],125.0,0.55,602250.0,690808.0318371374,608874.7499999999,False,operating,subcritical
+G100000108235,L100000102789,Punagaya power station,PT Bosowa Makassar [100%],125.0,0.55,602250.0,690808.0318371374,608874.7499999999,False,operating,subcritical
+G100000108236,L100000102789,Punagaya power station,PT Bosowa Makassar [100%],135.0,0.55,650430.0,688682.468662254,657584.73,False,operating,subcritical
+G100000108237,L100000102789,Punagaya power station,PT Bosowa Makassar [100%],135.0,0.55,650430.0,688682.468662254,657584.73,False,operating,subcritical
+G100000113843,L100000104398,Purwakarta Indorama power station,PLN,30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,subcritical
+G100000113844,L100000104398,Purwakarta Indorama power station,PLN,30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,subcritical
+G100000114329,L100000104616,Qingdao Zhongsheng captive power station,PT Metal Smeltindo Selaras [100%],65.0,0.55,313170.0,327891.69095611497,406181.49,False,operating,unknown
+G100000114330,L100000104616,Qingdao Zhongsheng captive power station,PT Metal Smeltindo Selaras [100%],65.0,0.55,313170.0,327891.69095611497,406181.49,False,operating,unknown
+G100000108526,L100000102713,Rembang power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000108527,L100000102713,Rembang power station,PLN,315.0,0.55,1517670.0,1606925.760211926,1534364.37,False,operating,subcritical
+G100000109397,L100000102802,Shenhua Guohua power station,PT GH EMM Indonesia [100%],150.0,0.55,722700.0,871237.6010266499,730649.7,False,operating,subcritical
+G100000109398,L100000102802,Shenhua Guohua power station,PT GH EMM Indonesia [100%],150.0,0.55,722700.0,871237.6010266499,730649.7,False,operating,subcritical
+G100000109399,L100000102745,Sinar Mas Jambi Lontar power station,PT Lontar Papyrus Pulp & Paper Industry [100%],37.0,0.55,178266.0,228072.9286649996,231211.002,False,operating,subcritical
+G100000109400,L100000102745,Sinar Mas Jambi Lontar power station,PT Lontar Papyrus Pulp & Paper Industry [100%],37.0,0.55,178266.0,228072.9286649996,231211.002,False,operating,subcritical
+G100000109401,L100000102745,Sinar Mas Jambi Lontar power station,PT Lontar Papyrus Pulp & Paper Industry [100%],37.0,0.55,178266.0,228072.9286649996,231211.002,False,operating,subcritical
+G100000114325,L100000102745,Sinar Mas Jambi Lontar power station,PT Lontar Papyrus Pulp & Paper Industry [100%],100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000115259,L100000104846,Sulawesi Labota power station,PT Walsin Nickel Industrial Indonesia [100%],350.0,0.55,1686300.0000000002,1618439.756642363,1704849.3,False,operating,unknown
+G100000115260,L100000104846,Sulawesi Labota power station,Indonesia Eternal Smelting Co [100%],350.0,0.55,1686300.0000000002,1618439.756642363,1704849.3,False,operating,unknown
+G100000115261,L100000104846,Sulawesi Labota power station,Indonesia Huaqing Aluminum Co Ltd [100%],380.0,0.55,1830840.0,1757163.164354565,1850979.24,False,operating,unknown
+G100000115123,L100000104846,Sulawesi Labota power station,Indonesia Wanjia Ferro Nickel Co Ltd [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115124,L100000104846,Sulawesi Labota power station,Indonesia Zhaohui Ferro Nickel Co Ltd [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115125,L100000104846,Sulawesi Labota power station,PT Sulawesi Mining Investment [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115360,L100000104846,Sulawesi Labota power station,PT Sulawesi Mining Investment [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115361,L100000104846,Sulawesi Labota power station,PT Sulawesi Mining Investment [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115362,L100000104846,Sulawesi Labota power station,PT Sulawesi Mining Investment [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000109663,L100000102722,Sulawesi Mining power station,PT Sulawesi Mining Investment [100%],65.0,0.55,313170.0,355215.99853579124,406181.49,False,operating,unknown
+G100000109664,L100000102722,Sulawesi Mining power station,PT Sulawesi Mining Investment [100%],65.0,0.55,313170.0,355215.99853579124,406181.49,False,operating,unknown
+G100000109665,L100000102722,Sulawesi Mining power station,PT Indonesia Guang Ching Nickel and Stainless Steel Industry [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000109666,L100000102722,Sulawesi Mining power station,PT Indonesia Guang Ching Nickel and Stainless Steel Industry [100%],150.0,0.55,722700.0,756673.13297565,730649.7,False,operating,unknown
+G100000109667,L100000102722,Sulawesi Mining power station,PT Indonesia Tsingshan Stainless Steel [100%],350.0,0.55,1686300.0000000002,1618439.756642363,1704849.3,False,operating,unknown
+G100000113217,L100000102722,Sulawesi Mining power station,PT Indonesia Tsingshan Stainless Steel [100%],350.0,0.55,1686300.0000000002,1618439.756642363,1704849.3,False,operating,unknown
+G100000114323,L100000102722,Sulawesi Mining power station,PT Indonesia Tsingshan Stainless Steel [100%],350.0,0.55,1686300.0000000002,1618439.756642363,1704849.3,False,operating,unknown
+G100000114324,L100000102722,Sulawesi Mining power station,PT Indonesia Tsingshan Stainless Steel [100%],350.0,0.55,1686300.0000000002,1618439.756642363,1704849.3,False,operating,unknown
+G100000115363,L100000102722,Sulawesi Mining power station,Indonesia Morowali Power Co [100%],250.0,0.55,1204500.0,1261121.88829275,1217749.4999999998,False,operating,unknown
+G100000109670,L100000102742,Sulbagut-1 power station,PT Gorontalo Listrik Perdana [100%],50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000109671,L100000102742,Sulbagut-1 power station,PT Gorontalo Listrik Perdana [100%],50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000109687,L100000102763,Sulut-3 power station,PT Minahasa Cahaya Lestari [100%],50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000109688,L100000102763,Sulut-3 power station,PT Minahasa Cahaya Lestari [100%],50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000109696,L100000102804,Sumsel-1 power station,PT Lion Power Energy; China Shenhua Energy Co Ltd,350.0,0.55,1686300.0000000002,1581575.817966953,1704849.3,False,operating,supercritical
+G100000109700,L100000102806,Sumsel-5 power station,PT DSSP Power Sumsel [100%],150.0,0.55,722700.0,765202.74295806,730649.7,False,operating,subcritical
+G100000109701,L100000102806,Sumsel-5 power station,PT DSSP Power Sumsel [100%],150.0,0.55,722700.0,765202.74295806,730649.7,False,operating,subcritical
+G100000109790,L100000102785,Tabalong power station,PT Tanjung Power Indonesia [100%],100.0,0.55,481800.00000000006,536146.2160164001,487099.8,False,operating,subcritical
+G100000109791,L100000102785,Tabalong power station,PT Tanjung Power Indonesia [100%],100.0,0.55,481800.00000000006,536146.2160164001,487099.8,False,operating,subcritical
+G100000109792,L100000102786,Tabalong Wisesa power station,PT Makmur Sejahtera Wisesa [100%],30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,CFB
+G100000109793,L100000102786,Tabalong Wisesa power station,PT Makmur Sejahtera Wisesa [100%],30.0,0.55,144540.0,165793.927640913,187468.38,False,operating,CFB
+G100000109863,L100000102792,Takalar power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000109864,L100000102792,Takalar power station,PLN,100.0,0.55,481800.00000000006,510135.16197204,487099.8,False,operating,subcritical
+G100000109946,L100000102732,Tanjung Awar-Awar power station,PLN,350.0,0.55,1686300.0000000002,1785473.066902141,1704849.3,False,operating,subcritical
+G100000109947,L100000102732,Tanjung Awar-Awar power station,PLN,350.0,0.55,1686300.0000000002,1785473.066902141,1704849.3,False,operating,subcritical
+G100000109960,L100000102714,Tanjung Jati B power station,PT Central Java Power [100%],660.0,0.55,3179880.0000000005,3038144.196165013,2896870.6800000006,False,operating,subcritical
+G100000109961,L100000102714,Tanjung Jati B power station,PT Central Java Power [100%],660.0,0.55,3179880.0000000005,3038144.196165013,2896870.6800000006,False,operating,subcritical
+G100000109956,L100000102714,Tanjung Jati B power station,PT Central Java Power [100%],660.0,0.55,3179880.0000000005,3038144.196165013,2896870.6800000006,False,operating,subcritical
+G100000109957,L100000102714,Tanjung Jati B power station,PT Central Java Power [100%],660.0,0.55,3179880.0000000005,3038144.196165013,2896870.6800000006,False,operating,subcritical
+G100000109958,L100000102714,Tanjung Jati B power station,PT Bhumi Jati Power [100%],1000.0,0.55,4818000.0,4041061.4991120007,4389198.0,False,operating,ultra-supercritical
+G100000109959,L100000102714,Tanjung Jati B power station,PT Bhumi Jati Power [100%],1000.0,0.55,4818000.0,4041061.4991120007,4389198.0,False,operating,ultra-supercritical
+G100000109962,L100000102782,Tanjung Kasam power station,PT Tanjung Kasam Power [100%],65.0,0.55,313170.0,359220.17655531154,406181.49,False,operating,subcritical
+G100000109963,L100000102782,Tanjung Kasam power station,PT Tanjung Kasam Power [100%],65.0,0.55,313170.0,359220.17655531154,406181.49,False,operating,subcritical
+G100000109971,L100000102756,Tarahan power station,PLN,100.0,0.55,481800.00000000006,552646.4254697101,487099.8,False,operating,subcritical
+G100000109972,L100000102756,Tarahan power station,PLN,100.0,0.55,481800.00000000006,552646.4254697101,487099.8,False,operating,subcritical
+G100000109998,L100000102835,Teluk Sirih power station,PLN,112.0,0.55,539616.0000000001,618963.9965260753,545551.7760000001,False,operating,CFB
+G100000109999,L100000102835,Teluk Sirih power station,PLN,112.0,0.55,539616.0000000001,618963.9965260753,545551.7760000001,False,operating,CFB
+G100000110178,L100000102740,Timor-1 power station,PLN,50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000110179,L100000102740,Timor-1 power station,PLN,50.0,0.55,240900.00000000003,255067.58098602,312447.30000000005,False,operating,subcritical
+G100000114980,L100000104805,Tjiwi Kimia Paper Mill power station,PT Pabrik Kertas Tjiwi Kimia Tbk [100%],35.0,0.55,168630.0,215744.6622506753,218713.11,False,operating,subcritical
+G100000114981,L100000104805,Tjiwi Kimia Paper Mill power station,PT Pabrik Kertas Tjiwi Kimia Tbk [100%],35.0,0.55,168630.0,215744.6622506753,218713.11,False,operating,subcritical
+G100000114982,L100000104805,Tjiwi Kimia Paper Mill power station,PT Pabrik Kertas Tjiwi Kimia Tbk [100%],70.0,0.55,337260.0,411966.48350896506,437426.22,False,operating,unknown
+G100000114983,L100000104805,Tjiwi Kimia Paper Mill power station,PT Pabrik Kertas Tjiwi Kimia Tbk [100%],90.0,0.55,433620.00000000006,491837.5364341726,562405.14,False,operating,unknown
+G100000110240,L100000102793,Tonasa Cement Plant power station,PT Semen Gresik [100%],35.0,0.55,168630.0,193426.2489143985,218713.11,False,operating,subcritical
+G100000110241,L100000102793,Tonasa Cement Plant power station,PT Semen Gresik [100%],35.0,0.55,168630.0,193426.2489143985,218713.11,False,operating,subcritical
+G100000115128,L100000104847,Wanxiang Nickel Indonesia power station,PT Wanxiang Steel Indonesia [100%],65.0,0.55,313170.0,327891.69095611497,406181.49,False,operating,unknown
+G100000115129,L100000104847,Wanxiang Nickel Indonesia power station,PT Wanxiang Steel Indonesia [100%],65.0,0.55,313170.0,327891.69095611497,406181.49,False,operating,unknown
+G100000114314,L100000104613,Weda Bay power station,PT Weda Bay Energi [100%],250.0,0.55,1204500.0,1232396.7412729498,1217749.4999999998,False,operating,supercritical
+G100000115272,L100000104613,Weda Bay power station,PT Indonesia Weda Bay Industrial Park [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115273,L100000104613,Weda Bay power station,PT Indonesia Weda Bay Industrial Park [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115364,L100000104613,Weda Bay power station,PT Indonesia Weda Bay Industrial Park [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100001000640,L100000104613,Weda Bay power station,PT Indonesia Weda Bay Industrial Park [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100001000641,L100000104613,Weda Bay power station,PT Indonesia Weda Bay Industrial Park [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000114315,L100000104613,Weda Bay power station,PT Yashi Indonesia Investment [100%],250.0,0.55,1204500.0,1232396.7412729498,1217749.4999999998,False,operating,supercritical
+G100000114316,L100000104613,Weda Bay power station,PT Youshan Nickel Indonesia [100%],250.0,0.55,1204500.0,1232396.7412729498,1217749.4999999998,False,operating,supercritical
+G100000114317,L100000104613,Weda Bay power station,PT Libai Indonesia Metal Co [100%],250.0,0.55,1204500.0,1232396.7412729498,1217749.4999999998,False,operating,supercritical
+G100000115268,L100000104613,Weda Bay power station,PT Huayue Nickel Cobalt [100%],250.0,0.55,1204500.0,1232396.7412729498,1217749.4999999998,False,operating,supercritical
+G100000115269,L100000104613,Weda Bay power station,PT Huake Nickel Indonesia [100%],250.0,0.55,1204500.0,1232396.7412729498,1217749.4999999998,False,operating,supercritical
+G100000115270,L100000104613,Weda Bay power station,PT Sunny Metal Industry [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000115271,L100000104613,Weda Bay power station,PT Angel Nickel Industry [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000114896,L100000104613,Weda Bay power station,PT Angel Nickel Industry [100%],380.0,0.55,1830840.0,1717139.459506978,1850979.24,False,operating,supercritical
+G100000114318,L100000104614,Xinxing Ductile Iron Pipes power station,PT Megah Surya Pertiwi [100%],38.0,0.55,183084.00000000003,191690.527020498,237459.94800000003,False,operating,unknown
+G100000114319,L100000104614,Xinxing Ductile Iron Pipes power station,PT Megah Surya Pertiwi [100%],38.0,0.55,183084.00000000003,191690.527020498,237459.94800000003,False,operating,unknown
+G100000114320,L100000104614,Xinxing Ductile Iron Pipes power station,PT Megah Surya Pertiwi [100%],38.0,0.55,183084.00000000003,191690.527020498,237459.94800000003,False,operating,unknown

@@ -1,0 +1,49 @@
+{
+  "company_investment": {
+    "description": "Coal power companies (PLN and IPPs) are assumed to invest in clean technology to reduce their emission intensity and heat rate annually once the carbon tax rate exceeds the minimum tax rate by a specific trigger threshold. The magnitude of the reduction is proportional to the excess tax, up to a maximum annual limit, and is adjusted by company-specific biases.",
+    "conditions": [
+      {
+        "id": "tax_above_trigger",
+        "variable": "tax_rate_minus_min_tax",
+        "operator": ">",
+        "threshold_param": "trigger_tax_above_min",
+        "explanation": "Investment in cleaner technology is activated when the carbon tax exceeds the minimum tax by more than this threshold."
+      }
+    ],
+    "actions": [
+      {
+        "applies_when": "tax_above_trigger",
+        "type": "reduce_emission_intensity_and_heat_rate",
+        "formula": "reduction_factor = min(max_reduction_per_year, excess_tax / tax_to_reduction_scale)",
+        "excess_tax_definition": "excess_tax = tax_rate_minus_min_tax - trigger_tax_above_min",
+        "pln_bias_param": "pln_adjustment_bias",
+        "ipp_bias_param": "ipp_adjustment_bias",
+        "heat_multiplier_param": "heatrate_reduction_multiplier"
+      }
+    ],
+    "trigger_tax_above_min": {
+      "value": 10.0,
+      "source": "assumed"
+    },
+    "max_reduction_per_year": {
+      "value": 0.03,
+      "source": "assumed"
+    },
+    "tax_to_reduction_scale": {
+      "value": 2000.0,
+      "source": "assumed"
+    },
+    "heatrate_reduction_multiplier": {
+      "value": 0.9,
+      "source": "assumed"
+    },
+    "pln_adjustment_bias": {
+      "value": 1.2,
+      "source": "llm-inferred"
+    },
+    "ipp_adjustment_bias": {
+      "value": 1.0,
+      "source": "assumed"
+    }
+  }
+}
