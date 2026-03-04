@@ -1,0 +1,463 @@
+You are assisting with the extraction of
+regulatory rules for an Agent-Based Simulation of Indonesia’s carbon tax policy
+in the coal-fired power sector.
+ 
+Your task is to read the regulation text
+provided to you and convert the relevant information into a single JSON
+configuration object with the exact structure and key names defined below.
+ 
+The regulation text may be incomplete from a
+modelling perspective.
+Whenever a required parameter is not explicitly
+stated in the regulation, you must:
+ 
+Choose a reasonable numerical value based on
+the policy context and common sense (e.g. small adjustment steps, thresholds
+slightly above/below 1, etc.).
+ 
+Mark its "source" as
+"assumed".
+ 
+If a value is clearly and directly specified in
+the regulation (even as a range or formula that you can reasonably interpret
+into a single number), then:
+ 
+Use that number (or a clearly justified point
+estimate, such as the midpoint of a range).
+ 
+Mark its "source" as
+"regulation".
+ 
+In addition to numeric parameters, you must also encode the behavioural
+decision rules that specify when and how the Government
+adjusts the carbon tax rate.
+
+These rules must be represented using the "description", "conditions",
+and "actions" fields inside "emission_adjustment" and "market_alignment"
+as defined in the JSON schema.
+ 
+Output format (mandatory)
+ 
+You must output only valid JSON, with the exact structure and key
+names defined below.
+
+Do not remove any fields. Fill both the parameter fields and the behaviour
+rule fields (description, conditions, actions).
+{
+ "min_tax_rate": { "value": <float>,
+"source": "<regulation|assumed>" },
+ "initial_tax_rate": { "value": <float>,
+"source": "<regulation|assumed>" },
+ 
+ "emission_adjustment": {
+   "description": "<natural-language summary of the
+decision rule>",
+ 
+   "conditions": [
+      {
+       "id": "high_emission",
+       "variable": "emission_ratio",
+       "operator": ">",
+       "threshold_param": "upper_threshold_ratio",
+       "explanation": "<why emissions above this ratio
+trigger a tax increase>"
+      },
+      {
+       "id": "low_emission",
+       "variable": "emission_ratio",
+       "operator": "<",
+       "threshold_param": "lower_threshold_ratio",
+       "explanation": "<why emissions below this ratio
+trigger a tax decrease>"
+      }
+    ],
+ 
+   "actions": [
+      {
+       "applies_when": "high_emission",
+       "type": "adjust_tax_rate",
+       "direction": "increase",
+       "step_param": "step_up"
+      },
+      {
+       "applies_when": "low_emission",
+       "type": "adjust_tax_rate",
+       "direction": "decrease",
+       "step_param": "step_down"
+      }
+    ],
+ 
+   "upper_threshold_ratio": { "value": <float>,
+"source": "<regulation|assumed>" },
+   "lower_threshold_ratio": { "value": <float>,
+"source": "<regulation|assumed>" },
+   "step_up": { "value": <float>,
+"source": "<regulation|assumed>" },
+   "step_down": { "value": <float>,
+"source": "<regulation|assumed>" }
+  },
+ 
+ "market_alignment": {
+   "description": "<natural-language summary of how the
+tax follows or diverges from the carbon market price>",
+ 
+   "conditions": [
+      {
+       "id": "market_too_high",
+       "variable": "market_price",
+       "operator": ">",
+       "threshold_expression": "upper_multiplier *
+min_tax_rate",
+       "explanation": "<when market price is considered too
+high relative to the statutory minimum>"
+      },
+      {
+       "id": "market_too_low",
+       "variable": "market_price",
+       "operator": "<",
+       "threshold_expression": "min_tax_rate",
+       "explanation": "<when market price is considered too
+low relative to the statutory minimum>"
+      }
+    ],
+ 
+   "actions": [
+      {
+       "applies_when": "market_too_high",
+       "type": "partial_alignment",
+       "direction": "increase_tax_towards_market",
+       "factor_param": "align_step_factor"
+      },
+      {
+       "applies_when": "market_too_low",
+       "type": "partial_alignment",
+       "direction": "decrease_tax_towards_market",
+       "factor_param": "align_step_factor"
+      }
+    ],
+ 
+   "upper_multiplier": { "value": <float>,
+"source": "<regulation|assumed>" },
+   "align_step_factor": { "value": <float>,
+"source": "<regulation|assumed>" }
+  }
+}
+ 
+Rules:
+ 
+Use exact key names as above.
+ 
+Every parameter must have both
+"value" and "source".
+ 
+"source" must be either
+"regulation" or "assumed" (lowercase).
+ 
+Do not include any extra top-level keys or
+nested keys.
+ 
+Do not include comments, explanations, or text
+outside the JSON.
+ 
+Use floating-point numbers for every
+"value" (e.g. 30.0, 1.05, 0.1).
+ 
+Semantic meaning of each parameter
+ 
+Use the descriptions below to interpret the
+regulation and map it into the JSON.
+ 
+1. min_tax_rate
+"min_tax_rate": { "value":
+<float>, "source": "<regulation|assumed>" }
+ 
+ 
+Meaning: The minimum carbon tax rate that the
+government will apply. The tax rate must never fall below this value, even when
+emissions are low or market prices fall.
+ 
+Typical unit: Same as in the regulation, e.g.
+Indonesian Rupiah per kg CO₂e or per ton CO₂e (do not change units; just use
+the regulation’s unit).
+ 
+Mapping guidance:
+ 
+If the regulation defines a minimum tax or
+floor tax (e.g. “the carbon tax shall not be lower than …”), use that number
+here.
+ 
+If only a single tax rate is mentioned and no
+explicit minimum/floor is given, treat that value as both min_tax_rate and
+initial_tax_rate and mark both as "regulation".
+ 
+If no clear information is available, choose a
+reasonable value (e.g. in the same order of magnitude as any mentioned tax
+rates) and mark "assumed".
+ 
+2. initial_tax_rate
+"initial_tax_rate": {
+"value": <float>, "source":
+"<regulation|assumed>" }
+ 
+ 
+Meaning: The starting carbon tax rate in the
+first period when the policy is applied in the simulation.
+ 
+Typical unit: Same as the regulation’s stated
+tax rate.
+ 
+Mapping guidance:
+ 
+If the regulation states an initial tax rate
+(e.g. “in 2025, the carbon tax is set at …”), use that number.
+ 
+If the regulation only gives a uniform tax rate
+with no explicit time reference, treat that as the initial tax rate.
+ 
+If the regulation defines time-varying rates
+(e.g. a schedule), choose the first applicable rate (the earliest year / phase)
+as initial_tax_rate.
+ 
+If not specified at all, set initial_tax_rate
+equal to min_tax_rate and mark it as "assumed" if this relationship
+is not explicitly stated.
+ 
+3. emission_adjustment
+"emission_adjustment": {
+ "upper_threshold_ratio": { "value": <float>,
+"source": "<regulation|assumed>" },
+ "lower_threshold_ratio": { "value": <float>,
+"source": "<regulation|assumed>" },
+ "step_up": { "value": <float>,
+"source": "<regulation|assumed>" },
+ "step_down": { "value": <float>,
+"source": "<regulation|assumed>" }
+}
+ 
+ 
+This block controls how the tax rate is
+adjusted based on emissions performance relative to an emissions target.
+ 
+Let:
+ 
+total_emission = aggregate emissions from the
+regulated power plants.
+ 
+emission_target = government’s emissions target
+for the same period.
+ 
+emission_ratio = total_emission /
+emission_target.
+ 
+3.1 upper_threshold_ratio
+ 
+Meaning: A dimensionless ratio above which
+emissions are considered “too high”.
+ 
+Behaviour: If emission_ratio >
+upper_threshold_ratio, the government increases the tax rate.
+ 
+Common example: If upper_threshold_ratio =
+1.05, tax goes up when emissions are more than 5% above the target.
+ 
+Mapping guidance:
+ 
+If the regulation defines a condition like “if
+emissions exceed the target by more than X% then the tax will be increased”,
+convert that percentage into a ratio and store it here (e.g. 5% → 1.05).
+ 
+If not defined, assume a modest threshold
+slightly above 1 (e.g. 1.05 or 1.10) and mark "assumed".
+ 
+3.2 lower_threshold_ratio
+ 
+Meaning: A dimensionless ratio below which
+emissions are considered “better than required”.
+ 
+Behaviour: If emission_ratio <
+lower_threshold_ratio, the government reduces the tax rate.
+ 
+Common example: If lower_threshold_ratio =
+0.95, tax goes down when emissions are more than 5% below the target.
+ 
+Mapping guidance:
+ 
+If the regulation states that “if emissions
+fall below the target by more than Y%, the tax can be reduced”, convert that
+percentage into a ratio (e.g. 10% → 0.90).
+ 
+If not defined, assume a threshold slightly
+below 1 (e.g. 0.95 or 0.90) and mark "assumed".
+ 
+3.3 step_up
+ 
+Meaning: The amount by which the tax rate is
+increased in one adjustment step when emissions are too high.
+ 
+Behaviour: When emission_ratio >
+upper_threshold_ratio, the new tax becomes:
+ 
+tax_rate_new = tax_rate_old + step_up.
+ 
+Unit: Same as the tax rate (e.g. Rupiah per
+unit of CO₂e).
+ 
+Mapping guidance:
+ 
+If the regulation specifies a rule like “the
+tax is increased by X per year when emissions exceed the target”, set step_up =
+X.
+ 
+If the regulation gives only percentage
+increases (e.g. “increase by 10%”), you may approximate by applying that
+percentage to the current tax rate and choose a representative step size; mark
+as "assumed".
+ 
+If nothing is stated, choose a relatively small
+increment (e.g. a fraction of the initial tax rate) and mark as
+"assumed".
+ 
+3.4 step_down
+ 
+Meaning: The amount by which the tax rate is
+decreased in one adjustment step when emissions are below the lower threshold.
+ 
+Behaviour: When emission_ratio <
+lower_threshold_ratio, the new tax becomes:
+ 
+tax_rate_new = tax_rate_old - step_down.
+ 
+Unit: Same as the tax rate.
+ 
+Mapping guidance:
+ 
+If the regulation specifies an explicit
+reduction rule (e.g. “reduce tax by X if emissions are sufficiently below the
+target”), use that value.
+ 
+If reductions are given only as percentages,
+approximate similarly to step_up.
+ 
+If not specified, you may set step_down equal
+to step_up or choose a smaller/larger value if the policy text suggests more
+cautious reductions; mark as "assumed" if not explicit.
+ 
+4. market_alignment
+"market_alignment": {
+ "upper_multiplier": { "value": <float>,
+"source": "<regulation|assumed>" },
+ "align_step_factor": { "value": <float>,
+"source": "<regulation|assumed>" }
+}
+ 
+ 
+This block controls how the tax rate is
+adjusted relative to an external carbon market price.
+ 
+Let:
+ 
+market_price = reference carbon price from the
+carbon market.
+ 
+min_tax_rate = value from the JSON above.
+ 
+upper_limit = upper_multiplier * min_tax_rate.
+ 
+4.1 upper_multiplier
+ 
+Meaning: A dimensionless multiplier applied to
+the minimum tax rate to define a threshold for when the market price is
+considered “too high”.
+ 
+Behaviour:
+ 
+If market_price > upper_limit, the
+government increases the tax rate part-way towards the market price.
+ 
+Example: If upper_multiplier = 1.5 and
+min_tax_rate = 30, then upper_limit = 45. If the market price exceeds 45 (in
+the same units), the tax is pulled upwards.
+ 
+Mapping guidance:
+ 
+If the regulation states that tax should
+“follow the carbon market” but only within a band around some reference,
+interpret that band as a multiplier on the minimum or base tax.
+ 
+If there is an explicit rule like “the tax
+should be reviewed if the market price exceeds X times the statutory rate”,
+convert that X directly into upper_multiplier.
+ 
+If nothing is mentioned about aligning with
+market prices, choose a reasonable value (e.g. 1.5 or 2.0) and mark
+"assumed".
+ 
+4.2 align_step_factor
+ 
+Meaning: A fraction between 0 and 1 indicating
+how aggressively the tax rate moves towards the market price when alignment is
+triggered.
+ 
+Behaviour:
+ 
+When market_price is outside the acceptable
+band (e.g. above upper_limit), the tax adjusts by a fraction of the gap:
+ 
+If market price is too high:
+ 
+delta = (market_price - tax_rate) *
+align_step_factor
+ 
+tax_rate_new = tax_rate_old + delta
+ 
+(If you also model downward alignment when the
+market price is low, a similar formula applies with a negative adjustment.)
+ 
+Mapping guidance:
+ 
+If the regulation states that the tax will
+“gradually adjust toward the market price” or specifies a fraction/percentage
+of the gap to be closed each review, map that to align_step_factor (e.g. “close
+50% of the gap” → 0.5).
+ 
+If not specified, choose a conservative value
+(e.g. between 0.1 and 0.5) and mark "assumed".
+ 
+Handling missing information
+ 
+If the regulation does not explicitly define
+one or more of these parameters:
+ 
+You must still provide a numeric
+"value" for every parameter.
+ 
+You must label such parameters with
+"source": "assumed".
+ 
+Assumed values should be:
+ 
+Plausible given the Indonesia carbon-tax
+context.
+ 
+Internally consistent (e.g. thresholds around
+1, step sizes not wildly larger than the tax itself).
+ 
+Symmetric where the regulation is neutral (e.g.
+you may choose step_up = step_down if there is no reason to differentiate).
+ 
+Do not leave any parameter missing or null.
+ 
+Final instructions
+ 
+Use only the information in the regulation text
+plus necessary reasonable assumptions.
+ 
+Do not refer to external documents or your own
+training data as binding law; if something is not directly supported, treat it
+as an assumption.
+ 
+Produce only the JSON object as described
+above.
+ 
+No explanations, no comments, no markdown, no
+extra keys.

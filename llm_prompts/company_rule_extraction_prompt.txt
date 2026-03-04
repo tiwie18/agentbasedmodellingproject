@@ -1,0 +1,273 @@
+You are assisting with the extraction and
+design of behavioral rules for an Agent-Based Model of Indonesia’s coal power
+sector.
+Coal power companies (PLN and IPPs) make annual
+clean-technology investment decisions based on the carbon tax level.
+Your task is to generate a JSON configuration
+that encodes how these companies adjust their emission intensity and heat rate
+in response to carbon tax signals.
+The JSON must contain both:
+
+ numerical
+     parameters, and
+
+ an explicit behavioural
+     decision rule represented by "description", "conditions",
+     and "actions" inside "company_investment", consistent
+     with the schema below.
+ 
+You must follow exactly the JSON schema below
+and output strict JSON only (no extra text, comments, or markdown).
+ 
+1. Required JSON schema (mandatory)
+{
+ "company_investment": {
+   "description": "<natural-language summary of how
+companies invest in cleaner technology in response to the carbon tax>",
+ 
+   "conditions": [
+      {
+       "id": "tax_above_trigger",
+       "variable": "tax_rate_minus_min_tax",
+       "operator": ">",
+       "threshold_param": "trigger_tax_above_min",
+       "explanation": "Investment in cleaner technology is
+activated when the carbon tax exceeds the minimum tax by more than this
+threshold."
+      }
+    ],
+ 
+   "actions": [
+      {
+       "applies_when": "tax_above_trigger",
+       "type": "reduce_emission_intensity_and_heat_rate",
+       "formula": "reduction_factor =
+min(max_reduction_per_year, excess_tax / tax_to_reduction_scale)",
+       "excess_tax_definition": "excess_tax =
+tax_rate_minus_min_tax - trigger_tax_above_min",
+       "pln_bias_param": "pln_adjustment_bias",
+       "ipp_bias_param": "ipp_adjustment_bias",
+       "heat_multiplier_param":
+"heatrate_reduction_multiplier"
+      }
+    ],
+ 
+   "trigger_tax_above_min": {
+     "value": <float>,
+     "source": "assumed" | "regulation" |
+"llm-inferred"
+    },
+   "max_reduction_per_year": {
+     "value": <float>,
+     "source": "assumed"
+    },
+   "tax_to_reduction_scale": {
+     "value": <float>,
+     "source": "assumed"
+    },
+   "heatrate_reduction_multiplier": {
+     "value": <float>,
+     "source": "assumed"
+    },
+   "pln_adjustment_bias": {
+     "value": <float>,
+     "source": "assumed"
+    },
+   "ipp_adjustment_bias": {
+     "value": <float>,
+     "source": "assumed"
+    }
+  }
+}
+Rules:
+ 
+Use exact key names as above. You must fill all fields in "company_investment",
+including "description", "conditions", and "actions".
+Do not omit them.
+ 
+Every parameter must have both
+"value" and "source".
+ 
+All "value" fields must be floats
+(e.g. 10.0, 0.03).
+ 
+Allowed "source" values:
+ 
+"regulation": only if the number is
+clearly stated in Indonesian regulations.
+ 
+"assumed": if it is a modelling
+assumption chosen by you.
+ 
+"llm-inferred": if you derive it from
+qualitative policy context (e.g. PLN more aggressive than IPPs) rather than a
+hard legal number.
+ 
+Output must be valid JSON only, no trailing
+commas, no comments, no text outside the JSON.
+ 
+2. Semantic meaning of each parameter
+ 
+Use these meanings to choose realistic values.
+ 
+2.1 trigger_tax_above_min
+"trigger_tax_above_min": {
+"value": <float>, "source": "..." }
+ 
+ 
+Meaning: How much higher the carbon tax must be
+above the minimum tax rate (e.g. Rp 30/kg CO₂e) before companies start
+investing in emission-reducing technology.
+ 
+Interpreted as:
+ 
+if carbon_tax - min_tax_rate >
+trigger_tax_above_min, then companies invest and reduce emission intensity.
+ 
+Guidance:
+ 
+Use a positive number (e.g. some rupiah per kg
+CO₂e above the floor).
+ 
+If regulations do not specify such a trigger
+(very likely), mark "source": "assumed" or
+"llm-inferred".
+ 
+2.2 max_reduction_per_year
+"max_reduction_per_year": {
+"value": <float>, "source": "assumed" }
+ 
+ 
+Meaning: Maximum fractional reduction in
+emission intensity per year for a given plant under strong carbon tax.
+ 
+Example:
+ 
+0.03 = 3% maximum reduction in emission
+intensity per year.
+ 
+Constraint:
+ 
+This value should reflect realistic investment,
+typically between 0.005 and 0.05 (0.5% to 5% per year).
+ 
+Always "source": "assumed"
+(this is a modelling choice).
+ 
+2.3 tax_to_reduction_scale
+"tax_to_reduction_scale": {
+"value": <float>, "source": "assumed" }
+ 
+ 
+Meaning: Scaling factor that converts excess
+carbon tax into fractional reduction in emission intensity.
+ 
+The model will use a rule of the form:
+ 
+reduction_fraction =
+min(max_reduction_per_year, excess_tax / tax_to_reduction_scale)
+ 
+where:
+ 
+excess_tax = carbon_tax - (min_tax_rate +
+trigger_tax_above_min)
+ 
+Guidance:
+ 
+Larger tax_to_reduction_scale → companies are
+less sensitive to tax (need higher taxes for a given reduction).
+ 
+Choose a value that yields typical reductions
+in the 0.5%–5% range under realistic tax levels.
+ 
+2.4 heatrate_reduction_multiplier
+"heatrate_reduction_multiplier": {
+"value": <float>, "source": "assumed" }
+ 
+ 
+Meaning: How much heat rate improves relative
+to the emission intensity reduction.
+ 
+Example:
+ 
+1.0 → heat rate improves by the same fraction
+as emission intensity.
+ 
+0.5 → heat rate improves half as much as
+emission intensity.
+ 
+Typically between 0.5 and 1.5 and marked
+"assumed".
+ 
+2.5 pln_adjustment_bias
+"pln_adjustment_bias": {
+"value": <float>, "source": "assumed" }
+ 
+ 
+Meaning: Multiplier for PLN’s investment
+aggressiveness compared to a neutral baseline.
+ 
+Example:
+ 
+1.2 → PLN reduces emissions 20% faster than the
+base reduction fraction.
+ 
+1.0 → PLN responds like a generic company (no
+bias).
+ 
+Policy context:
+ 
+PLN operates under government mandate and can
+be somewhat more proactive.
+ 
+Typically slightly above 1.0 (e.g. 1.1–1.3).
+ 
+2.6 ipp_adjustment_bias
+"ipp_adjustment_bias": {
+"value": <float>, "source": "assumed" }
+ 
+ 
+Meaning: Multiplier for IPPs’ investment
+response.
+ 
+Policy context:
+ 
+IPPs are cost-sensitive; they respond more
+strongly when tax is clearly above minimum, but may be conservative at low tax
+levels.
+ 
+Reasonable options:
+ 
+1.0 → same as baseline.
+ 
+Slightly below or above 1 depending on how you
+interpret their responsiveness.
+ 
+3. Policy & realism constraints
+ 
+When choosing numbers:
+ 
+Ensure annual emission intensity reduction
+implied by your parameters is typically between 0.5% and 5% under plausible
+carbon tax levels.
+ 
+Keep values moderate, no extreme or unrealistic
+behavior.
+ 
+Prefer "source": "assumed"
+unless a number is explicitly in regulation.
+ 
+Use "llm-inferred" only when:
+ 
+You base the value on qualitative policy
+statements (e.g. “PLN is more proactive”) instead of pure guessing.
+ 
+4. Final instructions
+ 
+Use only the schema provided.
+ 
+Do not add extra keys.
+ 
+Do not include explanations or comments.
+ 
+Output strict JSON only as the final answer.
